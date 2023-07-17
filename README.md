@@ -2,7 +2,7 @@
 ## Description
 The Work Day Scheduler is a web-based application built using  HTML, CSS, JavaScript, Bootsrap, JQuery as well we Day.js. Wrapped all code that interacts with the DOM in a call to jQuery to ensure that the code isn't run until the browser has finished rendering all the elements in the html. This simple calender application allows users to save events for each hour of the day and build to meet user-defined criteria.
 
-Key features of this project include:
+## Key Summary features of this project include:
 . Current Day and time day is displayed at the top of the calender.
 . Use daily planner to create a schedule
 . Application displays timeblock for standard business hours of 9am&ndash;5pm
@@ -37,15 +37,14 @@ To access the Work Day Scheduler application using the URL "http://127.0.0.1:550
 
 2. Place the files in a directory: Create a directory on your local machine where you want to store the application files. 
 
-3. Start a web server: Since the URL provided includes the local address "127.0.0.1" (also known as "localhost"), it implies that you'll need a web server to serve the application. 
-
-   If you already have a web server installed and configured, make sure it is running. If not, you can use tools like Visual Studio Code's Live Server extension, XAMPP, or Python's SimpleHTTPServer to start a web server locally.
+3. Use tools like Visual Studio Code's Live Server extension, to open the index.html file and it will display the page URL 
 
 4. Access the application: Open your web browser (e.g., Chrome, Firefox, etc.) and enter the URL "http://127.0.0.1:5503/index.html" in the address bar. Press Enter to load the page.
 
-5. The Work Day Scheduler application should now load in your web browser, and you can interact with it according to its intended functionality. Congratulations! You have successfully launched the Work Day Scheduler Application.
+5. The Work Day Scheduler application should now load in your web browser, and you can interact with it according to its intended functionality. 
 
-Note: The specific steps may vary depending on the tools or web server you are using. Make sure to adapt the instructions accordingly. Additionally, if you don't have a web server or if the application is purely front-end, you can directly open the "index.html" file by double-clicking it, and it will load in your web browser without the need for a server.
+Congratulations! You have successfully launched the Work Day Scheduler Application.
+
 
 
 ![Alt text](css/images/present%20task%2010am.png)
