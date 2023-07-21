@@ -1,4 +1,4 @@
- // Psuedo code to build a work day scheduler to meet all the given acceptance criteria:
+// Psuedo code to build a work day scheduler to meet all the given acceptance criteria:
 
 // 1. The current day date and time will be displayed at the top of the calendar.
 // 2.  The time blocks for standard business hours (9am to 5pm) will be presented as you scroll down.
@@ -6,7 +6,6 @@
 // 4.  You can click into a time block to enter an event.
 // 5.  Clicking the save button for a time block will save the event text to local storage.
 // 6.  Even after refreshing the page, the saved events will persist due to local storage usage.
-
 
 
 
@@ -42,15 +41,15 @@ $(document).ready(function () {
       // Deduced the hour value from the text of the .hour element and convert it to an integer
       const blockHour = parseInt($(this).find(".hour").text());
       // Using thr if statement to compare the house value(blockHour) with the current hour (currentTime)
-       // to determine whether it's in the past, present, or future.
+      // to determine whether it's in the past, present, or future.
       if (blockHour < currentTime) {
-       // Add the class "past" to the time block if it's in the past
+        // Add the class "past" to the time block if it's in the past
         $(this).addClass("past");
       } else if (blockHour === currentTime) {
         // Add the class "present" to the time block if it's the current hour
         $(this).addClass("present");
       } else {
-         // Add the class "future" to the time block if it's in the future
+        // Add the class "future" to the time block if it's in the future
         $(this).addClass("future");
       }
     });
@@ -66,10 +65,10 @@ $(document).ready(function () {
       const savedEvent = localStorage.getItem(hour);
       // Check if there is a saved event for the current hour
       if (savedEvent) {
-      // If a saved event exists, set its value as the text inside the corresponding .description textarea
+        // If a saved event exists, set its value as the text inside the corresponding .description textarea
         $(this).find(".description").val(savedEvent);
       }
-    
+
     });
   }
 
@@ -77,7 +76,7 @@ $(document).ready(function () {
   function saveEvent() {
     // Get the hour value from the text of the .hour element
     const hour = $(this).siblings(".hour").text();
-     // Get the event text from the .description textarea
+    // Get the event text from the .description textarea
     const eventText = $(this).siblings(".description").val();
     // Save the event text to local storage using the hour as the key
     localStorage.setItem(hour, eventText);
@@ -92,11 +91,10 @@ $(document).ready(function () {
   colorCodeTimeBlocks();
   loadSavedEvents();
 
-  
+
 });
 
 
 
 
 
-  
