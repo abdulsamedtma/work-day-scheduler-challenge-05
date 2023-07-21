@@ -6,7 +6,7 @@
 // 4.  You can click into a time block to enter an event.
 // 5.  Clicking the save button for a time block will save the event text to local storage.
 // 6.  Even after refreshing the page, the saved events will persist due to local storage usage.
-// 7. Make sure to include the Day.js library in your HTML file as you've done before, and the work day scheduler should now fulfill all the acceptance criteria.
+
 
 
 
